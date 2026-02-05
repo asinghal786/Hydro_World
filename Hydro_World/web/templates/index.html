@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hydro World</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="ocean">
+    <div class="wave"></div>
+    <div class="wave wave2"></div>
+</div>
+
+<div class="container">
+    <h1>Hydro World</h1>
+    <p class="subtitle">Water Potability Analyzer</p>
+
+    <div class="card">
+        <div class="grid">
+            <input id="ph" placeholder="pH">
+            <input id="Hardness" placeholder="Hardness">
+            <input id="Solids" placeholder="Solids">
+            <input id="Chloramines" placeholder="Chloramines">
+            <input id="Sulfate" placeholder="Sulfate">
+            <input id="Conductivity" placeholder="Conductivity">
+            <input id="Organic_carbon" placeholder="Organic Carbon">
+            <input id="Trihalomethanes" placeholder="Trihalomethanes">
+            <input id="Turbidity" placeholder="Turbidity">
+        </div>
+
+        <button onclick="analyze()">Analyze Water</button>
+
+        <div id="result" class="result"></div>
+    </div>
+</div>
+
+<script src="/static/main.js"></script>
+</body>
+</html>
